@@ -2,8 +2,8 @@ import { ethers } from "hardhat";
 
 async function main() {
   const MyNFT = await ethers.getContractFactory("MyNFT");
-
-  const contract = await MyNFT.deploy("XYZPass", "XYZ");
+  //TODO：填写NFT名称和符号
+  const contract = await MyNFT.deploy(" ", "");
 
   await contract.waitForDeployment(); // ✅ 替代 .deployed()
 
