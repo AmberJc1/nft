@@ -3,7 +3,7 @@ import { ethers } from "hardhat";
 async function main() {
   const MyNFT = await ethers.getContractFactory("MyNFT");
   //TODO：填写NFT名称和符号
-  const contract = await MyNFT.deploy(" ", "");
+  const contract = await MyNFT.deploy("MY FIRST NFT", "MFNlala");
 
   await contract.waitForDeployment(); // ✅ 替代 .deployed()
 

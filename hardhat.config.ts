@@ -7,8 +7,8 @@ dotenv.config();
 const config: HardhatUserConfig = {
   solidity: "0.8.28",
   networks: {
-    polygon: {
-      url: "https://polygon-rpc.com", // 你也可以使用 Alchemy/Infura 的 RPC
+    "base-sepolia": {
+      url: "https://sepolia.base.org", // 你也可以使用 Alchemy/Infura 的 RPC
       accounts: [process.env.PRIVATE_KEY!], // 确保 .env 中有 PRIVATE_KEY
     },
     base: {
